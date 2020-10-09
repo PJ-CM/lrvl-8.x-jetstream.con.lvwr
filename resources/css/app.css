@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Jugando con la Personalización de TailwindCSS */
+
+.btn {
+    /*
+        Por el formateador o validador propio de VSCode o por cualquier otro como el de Prettier (extensión para formatear el código de los diferentes lenguajes, entre ellos, el de CSS), una línea como la siguiente marca este mensaje de error:
+            "semi-colon expectedcss(css-semicolonexpected)"
+    */
+    /* @apply px-4 py-2 font-bold rounded; */
+    /* La solución rápida es disponer de cada regla a aplicar en una nueva línea */
+    /*
+        Ver otra solución referida a la extensión de "stylelint" en este enlace:
+            -> Visual Studio Code CSS linting with Tailwind
+            https://www.meidev.co/blog/visual-studio-code-css-linting-with-tailwind/
+        También, comentado aquí:
+            -> How to solve semi-colon expected css(css-semicolonexpected)
+                https://stackoverflow.com/questions/61443484/how-to-solve-semi-colon-expected-csscss-semicolonexpected
+    */
+    @apply px-4;
+    @apply py-2;
+    @apply font-bold;
+    @apply rounded;
+}
+
+.btn-info {
+    /* @apply text-white bg-blue-200; */
+    @apply text-white;
+    @apply bg-blue-200;
+}
+
+.btn-info:hover {
+    @apply bg-blue-400;
+}

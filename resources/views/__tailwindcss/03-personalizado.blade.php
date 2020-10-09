@@ -1,0 +1,25 @@
+<x-guest-layout>
+    <div class="container p-4 mx-auto mt-2">
+        <h1 class="text-4xl text-danger">
+            Lorem ipsum dolor sit
+        </h1>
+        <h2 class="text-3xl text-white bg-danger">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </h2>
+        <h3 class="text-2xl text-info-100 bg-info-400">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, iusto ipsum.
+        </h3>
+
+        <div class="container p-4 mx-auto mt-2 text-center">
+            <h4 class="text-xl">Botón Básico</h4>
+            <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
+                Púlsame
+            </button>
+
+            <h4 class="mt-4 text-xl">Botón con CLASS Extraidos</h4>
+            <button class="btn btn-info">
+                Púlsame
+            </button>
+        </div>
+    </div>
+</x-guest-layout>
